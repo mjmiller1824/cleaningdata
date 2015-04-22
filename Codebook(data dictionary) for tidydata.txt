@@ -1,0 +1,275 @@
+Codebook for tidy data:
+
+The text of the original README is provided at the very bottom of this file.
+
+1.activityName:
+	Contains the activity names the participants took part in.
+	Originally they were coded as numbers but have been named based
+	on the activity_labels.txt file from the original dataset. Possible
+	values are:
+
+	1.Walking
+	2.Walking Upstairs
+	3.Walking Downstairs
+	4.Sitting
+	5.Standing
+	6.Laying
+
+2.subjectId:
+	The study used 30 participants. Each is assigned a unique identifier from
+	1-30. No names or other Personally Identifying
+	Information is given. Possible values are:
+
+	1 through 30 inclusive.
+
+
+The following columns are calculated variables. No range is given. Names used in explanations  are taken from the 
+pre-meaned(pre-calculated data) the read me describes how to write this data to a .csv file for comparison. The original
+file names contained characters that would have made R calculations difficult.
+
+IMPORTANT:  Acceleration numbers are in standard gravity units(g). Time is in seconds, angles are in radians/seconds.
+
+3.meanTimeBodyAccel.mean.X:
+	Calculated mean of timeBodyAccel.mean.X for each subject and activity.
+4.meanTimeBodyAccel.mean.Y:
+	Calculated mean of timeBodyAccel.mean.Y for each subject and activity.
+5.meanTimeBodyAccel.mean.Z:
+	Calculated mean of timeBodyAccel.mean.Z for each subject and activity.
+6.meanTimeGravityAccel.mean.X:
+	Calculated mean of timeGravityAccel.mean.X for each subject and activity.
+7.meanTimeGravityAccel.mean.Y:
+	Calculated mean of timeGravityAccel.mean.Y for each subject and activity.
+8.meanTimeGravityAccel.mean.Z:
+	Calculated mean of timeGravityAccel.mean.Z for each subject and activity.
+9.meanTimeBodyAccelJerk.mean.X:
+	Calculated mean of timeBodyAccelJerk.mean.X for each subject and activity.
+10.meanTimeBodyAccelJerk.mean.Y:
+	Calculated mean of timeBodyAccelJerk.mean.Y for each subject and activity.
+11.meanTimeBodyAccelJerk.mean.Z:
+	Calculated mean of timeBodyAccelJerk.mean.Z for each subject and activity.
+12.meanTimeBodyGyro.mean.X:
+	Calculated mean of timeBodyGyro.mean.X for each subject and activity.
+13.meanTimeBodyGyro.mean.Y:
+	Calculated mean of timeBodyGyro.mean.Y for each subject and activity.
+14.meanTimeBodyGyro.mean.Z:
+	Calculated mean of timeBodyGyro.mean.Z for each subject and activity.
+15.meanTimeBodyGyroJerk.mean.X:
+	Calculated mean of timeBodyGyroJerk.mean.X for each subject and activity.
+16.meanTimeBodyGyroJerk.mean.Y:
+	Calculated mean of timeBodyGyroJerk.mean.Y for each subject and activity.
+17.meanTimeBodyGyroJerk.mean.Z:
+	Calculated mean of timeBodyGyroJerk.mean.Z for each subject and activity.
+18.meanTimeBodyAccelMag.mean:
+	Calculated mean of timeBodyAccelMag.mean for each subject and activity.
+19.meanTimeGravityAccelMag.mean:
+	Calculated mean of timeGravityAccelMag.mean for each subject and activity.
+20.meanTimeBodyAccelJerkMag.mean:
+	Calculated mean of timeBodyAccelJerkMag.mean for each subject and activity.
+21.meanTimeBodyGyroMag.mean:
+	Calculated mean of timeBodyGyroMag.mean for each subject and activity.
+22.meanTimeBodyGyroJerkMag.mean:
+	Calculated mean of timeBodyGyroJerkMag.mean for each subject and activity.
+23.meanFreqBodyAccel.mean.X:
+	Calculated mean of freqBodyAccel.mean.X for each subject and activity.
+24.meanFreqBodyAccel.mean.Y:
+	Calculated mean of freqBodyAccel.mean.Y for each subject and activity.
+25.meanFreqBodyAccel.mean.Z:
+	Calculated mean of freqBodyAccel.mean.Z for each subject and activity.
+26.meanFreqBodyAccel.meanFreq.X:
+	Calculated mean of freqBodyAccel.meanFreq.X for each subject and activity.
+27.meanFreqBodyAccel.meanFreq.Y:
+	Calculated mean of freqBodyAccel.meanFreq.Y for each subject and activity.
+28.meanFreqBodyAccel.meanFreq.Z:
+	Calculated mean of freqBodyAccel.meanFreq.Z for each subject and activity.
+29.meanFreqBodyAccelJerk.mean.X:
+	Calculated mean of freqBodyAccelJerk.mean.X for each subject and activity.
+30.meanFreqBodyAccelJerk.mean.Y:
+	Calculated mean of freqBodyAccelJerk.mean.Y for each subject and activity.
+31.meanFreqBodyAccelJerk.mean.Z:
+	Calculated mean of freqBodyAccelJerk.mean.Z for each subject and activity.
+32.meanFreqBodyAccelJerk.meanFreq.X:
+	Calculated mean of freqBodyAccelJerk.meanFreq.X for each subject and activity.
+33.meanFreqBodyAccelJerk.meanFreq.Y:
+	Calculated mean of freqBodyAccelJerk.meanFreq.Y for each subject and activity.
+34.meanFreqBodyAccelJerk.meanFreq.Z:
+	Calculated mean of freqBodyAccelJerk.meanFreq.Z for each subject and activity.
+35.meanFreqBodyGyro.mean.X:
+	Calculated mean of freqBodyGyro.mean.X for each subject and activity.
+36.meanFreqBodyGyro.mean.Y:
+	Calculated mean of freqBodyGyro.mean.Y for each subject and activity.
+37.meanFreqBodyGyro.mean.Z:
+	Calculated mean of freqBodyGyro.mean.Z for each subject and activity.
+38.meanFreqBodyGyro.meanFreq.X:
+	Calculated mean of freqBodyGyro.meanFreq.X for each subject and activity.
+39.meanFreqBodyGyro.meanFreq.Y:
+	Calculated mean of freqBodyGyro.meanFreq.Y for each subject and activity.
+40.meanFreqBodyGyro.meanFreq.Z:
+	Calculated mean of freqBodyGyro.meanFreq.Z for each subject and activity.
+41.meanFreqBodyAccelMag.mean:
+	Calculated mean of freqBodyAccelMag.mean for each subject and activity.
+42.meanFreqBodyAccelMag.meanFreq:
+	Calculated mean of freqBodyAccelMag.meanFreq for each subject and activity.
+43.meanFreqBodyAccelJerkMag.mean:
+	Calculated mean of freqBodyAccelJerkMag.mean for each subject and activity.
+44.meanFreqBodyAccelJerkMag.meanFreq:
+	Calculated mean of freqBodyAccelJerkMag.meanFreq for each subject and activity.
+45.meanFreqBodyGyroMag.mean:
+	Calculated mean of freqBodyGyroMag.mean for each subject and activity.
+46.meanFreqBodyGyroMag.meanFreq:
+	Calculated mean of freqBodyGyroMag.meanFreq for each subject and activity.
+47.meanFreqBodyGyroJerkMag.mean:
+	Calculated mean of freqBodyGyroJerkMag.mean for each subject and activity.
+48.meanFreqBodyGyroJerkMag.meanFreq:
+	Calculated mean of freqBodyGyroJerkMag.meanFreq for each subject and activity.
+49.meanAngle.timeBodyAccelMean.gravity:
+	Calculated mean of angle.timeBodyAccelMean.gravity for each subject and activity.
+50.meanAngle.timeBodyAccelJerkMeangravityMean:
+	Calculated mean of angle.timeBodyAccelJerkMeangravityMean for each subject and activity.
+51.meanAngle.timeBodyGyroMean.gravityMean:
+	Calculated mean of angle.timeBodyGyroMean.gravityMean for each subject and activity.
+52.meanAngle.timeBodyGyroJerkMean.gravityMean:
+	Calculated mean of angle.timeBodyGyroJerkMean.gravityMean for each subject and activity.
+53.meanAngle.X.gravityMean:
+	Calculated mean of angle.X.gravityMean for each subject and activity.
+54.meanAngle.Y.gravityMean:
+	Calculated mean of angle.Y.gravityMean for each subject and activity.
+55.meanAngle.Z.gravityMean:
+	Calculated mean of angle.Z.gravityMean for each subject and activity.
+56.meanTimeBodyAccel.std.X:
+	Calculated mean of timeBodyAccel.std.X for each subject and activity.
+57.meanTimeBodyAccel.std.Y:
+	Calculated mean of timeBodyAccel.std.Y for each subject and activity.
+58.meanTimeBodyAccel.std.Z:
+	Calculated mean of timeBodyAccel.std.Z for each subject and activity.
+59.meanTimeGravityAccel.std.X:
+	Calculated mean of timeGravityAccel.std.X for each subject and activity.
+60.meanTimeGravityAccel.std.Y:
+	Calculated mean of timeGravityAccel.std.Y for each subject and activity.
+61.meanTimeGravityAccel.std.Z:
+	Calculated mean of timeGravityAccel.std.Z for each subject and activity.
+62.meanTimeBodyAccelJerk.std.X:
+	Calculated mean of timeBodyAccelJerk.std.X for each subject and activity.
+63.meanTimeBodyAccelJerk.std.Y:
+	Calculated mean of timeBodyAccelJerk.std.Y for each subject and activity.
+64.meanTimeBodyAccelJerk.std.Z:
+	Calculated mean of timeBodyAccelJerk.std.Z for each subject and activity.
+65.meanTimeBodyGyro.std.X:
+	Calculated mean of timeBodyGyro.std.X for each subject and activity.
+66.meanTimeBodyGyro.std.Y:
+	Calculated mean of timeBodyGyro.std.Y for each subject and activity.
+67.meanTimeBodyGyro.std.Z:
+	Calculated mean of timeBodyGyro.std.Z for each subject and activity.
+68.meanTimeBodyGyroJerk.std.X:
+	Calculated mean of timeBodyGyroJerk.std.X for each subject and activity.
+69.meanTimeBodyGyroJerk.std.Y:
+	Calculated mean of timeBodyGyroJerk.std.Y for each subject and activity.
+70.meanTimeBodyGyroJerk.std.Z:
+	Calculated mean of timeBodyGyroJerk.std.Z for each subject and activity.
+71.meanTimeBodyAccelMag.std:
+	Calculated mean of timeBodyAccelMag.std for each subject and activity.
+72.meanTimeGravityAccelMag.std:
+	Calculated mean of timeGravityAccelMag.std for each subject and activity.
+73.meanTimeBodyAccelJerkMag.std:
+	Calculated mean of timeBodyAccelJerkMag.std for each subject and activity.
+74.meanTimeBodyGyroMag.std:
+	Calculated mean of timeBodyGyroMag.std for each subject and activity.
+75.meanTimeBodyGyroJerkMag.std:
+	Calculated mean of timeBodyGyroJerkMag.std for each subject and activity.
+76.meanFreqBodyAccel.std.X:
+	Calculated mean of freqBodyAccel.std.X for each subject and activity.
+77.meanFreqBodyAccel.std.Y:
+	Calculated mean of freqBodyAccel.std.Y for each subject and activity.
+78.meanFreqBodyAccel.std.Z:
+	Calculated mean of freqBodyAccel.std.Z for each subject and activity.
+79.meanFreqBodyAccelJerk.std.X:
+	Calculated mean of freqBodyAccelJerk.std.X for each subject and activity.
+80.meanFreqBodyAccelJerk.std.Y:
+	Calculated mean of freqBodyAccelJerk.std.Y for each subject and activity.
+81.meanFreqBodyAccelJerk.std.Z:
+	Calculated mean of freqBodyAccelJerk.std.Z for each subject and activity.
+82.meanFreqBodyGyro.std.X:
+	Calculated mean of freqBodyGyro.std.X for each subject and activity.
+83.meanFreqBodyGyro.std.Y:
+	Calculated mean of freqBodyGyro.std.Y for each subject and activity.
+84.meanFreqBodyGyro.std.Z:
+	Calculated mean of freqBodyGyro.std.Z for each subject and activity.
+85.meanFreqBodyAccelMag.std:
+	Calculated mean of freqBodyAccelMag.std for each subject and activity.
+86.meanFreqBodyAccelJerkMag.std:
+	Calculated mean of freqBodyAccelJerkMag.std for each subject and activity.
+87.meanFreqBodyGyroMag.std:
+	Calculated mean of freqBodyGyroMag.std for each subject and activity.
+88.meanFreqBodyGyroJerkMag.std:
+	Calculated mean of freqBodyGyroJerkMag.std for each subject and activity.
+
+
+==================================================================
+Human Activity Recognition Using Smartphones Dataset
+Version 1.0
+==================================================================
+Jorge L. Reyes-Ortiz, Davide Anguita, Alessandro Ghio, Luca Oneto.
+Smartlab - Non Linear Complex Systems Laboratory
+DITEN - Università degli Studi di Genova.
+Via Opera Pia 11A, I-16145, Genoa, Italy.
+activityrecognition@smartlab.ws
+www.smartlab.ws
+==================================================================
+
+The experiments have been carried out with a group of 30 volunteers within an age bracket of 19-48 years. Each person performed six activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) wearing a smartphone (Samsung Galaxy S II) on the waist. Using its embedded accelerometer and gyroscope, we captured 3-axial linear acceleration and 3-axial angular velocity at a constant rate of 50Hz. The experiments have been video-recorded to label the data manually. The obtained dataset has been randomly partitioned into two sets, where 70% of the volunteers was selected for generating the training data and 30% the test data. 
+
+The sensor signals (accelerometer and gyroscope) were pre-processed by applying noise filters and then sampled in fixed-width sliding windows of 2.56 sec and 50% overlap (128 readings/window). The sensor acceleration signal, which has gravitational and body motion components, was separated using a Butterworth low-pass filter into body acceleration and gravity. The gravitational force is assumed to have only low frequency components, therefore a filter with 0.3 Hz cutoff frequency was used. From each window, a vector of features was obtained by calculating variables from the time and frequency domain. See 'features_info.txt' for more details. 
+
+For each record it is provided:
+======================================
+
+- Triaxial acceleration from the accelerometer (total acceleration) and the estimated body acceleration.
+- Triaxial Angular velocity from the gyroscope. 
+- A 561-feature vector with time and frequency domain variables. 
+- Its activity label. 
+- An identifier of the subject who carried out the experiment.
+
+The dataset includes the following files:
+=========================================
+
+- 'README.txt'
+
+- 'features_info.txt': Shows information about the variables used on the feature vector.
+
+- 'features.txt': List of all features.
+
+- 'activity_labels.txt': Links the class labels with their activity name.
+
+- 'train/X_train.txt': Training set.
+
+- 'train/y_train.txt': Training labels.
+
+- 'test/X_test.txt': Test set.
+
+- 'test/y_test.txt': Test labels.
+
+The following files are available for the train and test data. Their descriptions are equivalent. 
+
+- 'train/subject_train.txt': Each row identifies the subject who performed the activity for each window sample. Its range is from 1 to 30. 
+
+- 'train/Inertial Signals/total_acc_x_train.txt': The acceleration signal from the smartphone accelerometer X axis in standard gravity units 'g'. Every row shows a 128 element vector. The same description applies for the 'total_acc_x_train.txt' and 'total_acc_z_train.txt' files for the Y and Z axis. 
+
+- 'train/Inertial Signals/body_acc_x_train.txt': The body acceleration signal obtained by subtracting the gravity from the total acceleration. 
+
+- 'train/Inertial Signals/body_gyro_x_train.txt': The angular velocity vector measured by the gyroscope for each window sample. The units are radians/second. 
+
+Notes: 
+======
+- Features are normalized and bounded within [-1,1].
+- Each feature vector is a row on the text file.
+
+For more information about this dataset contact: activityrecognition@smartlab.ws
+
+License:
+========
+Use of this dataset in publications must be acknowledged by referencing the following publication [1] 
+
+[1] Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. Reyes-Ortiz. Human Activity Recognition on Smartphones using a Multiclass Hardware-Friendly Support Vector Machine. International Workshop of Ambient Assisted Living (IWAAL 2012). Vitoria-Gasteiz, Spain. Dec 2012
+
+This dataset is distributed AS-IS and no responsibility implied or explicit can be addressed to the authors or their institutions for its use or misuse. Any commercial use is prohibited.
+
+Jorge L. Reyes-Ortiz, Alessandro Ghio, Luca Oneto, Davide Anguita. November 2012.
