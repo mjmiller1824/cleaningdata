@@ -1,10 +1,10 @@
-Run Analysis takes the original six data sets and combines them into one large dataframe. Then it subsets the data by columns with "mean" and "std" in the title.
+Run Analysis takes the original seven files and combines them into one large data set. Then it subsets the data by columns with "mean" and "std" in the title.
 It splits the subsetted data by "subjectId" and "activityName". Then it calculates the mean of the data for each column puts it into long form
 and puts it together in one data set with cleaned labels and outputs a new and cleaned data with just the means and labels.
  
 
 
-From the original set of six files the following actions were taken in order:
+From the original set of seven files the following actions were taken in order:
 1.The titles were read in from "features.txt" and turned into a vector.
 2.The x_test data is read into R.
 3.The y_test data is read into R.
@@ -32,11 +32,11 @@ Here some explanation of choices in names is necessary.
 ###someone wants to see the premeaned data they can see it.
 ###column names used to have - and () in them. These are problematic for R
 ###Where these characters existed, they have been replaced with "." in the middle of the name and omitted at the end.
-###in the sections where there were multiple words strung together,
+###In the sections where there were multiple words strung together,
 ###camelCase has been used. These modifications were done to preserve readability               
 ###and to improve their functionality in R. Where t was previously used it has been
 ###replaced with time as per the features_info.txt and the f was replaced with freq denoting             
-###frequency, acc was replaced with accel to give the final titles more understandable meanings
+###frequency, acc was replaced with accel indicating acceleration to give the final titles more understandable forms.
 
 19.Assigns names to a varible that will be used to name 
 the columns on the post-meaned dataset. The word "mean" 
